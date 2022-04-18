@@ -1,10 +1,10 @@
-import React from 'react';
+import { createElement } from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import style from './Heading.module.css';
 
 const Heading = ({ level = 1, className, black = false, children }) => {
-  return React.createElement(
+  return createElement(
     `h${level}`,
     {
       className: cn(style.root, className, style[`level${level}`], {

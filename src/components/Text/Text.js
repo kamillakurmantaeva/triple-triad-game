@@ -1,4 +1,4 @@
-import React from 'react';
+import { createElement } from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import style from './Text.module.css';
@@ -11,7 +11,7 @@ const Text = ({
   italic = false,
   disabled = false,
 }) => {
-  return React.createElement(
+  return createElement(
     element,
     {
       className: cn(className, {
